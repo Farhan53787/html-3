@@ -1,0 +1,69 @@
+<head>
+
+    <title>ScrollSpy</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            position: relative;
+        }
+        p {
+            font-size:18px;
+        }
+        #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+        #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+    </style>    
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"
+                data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand">Codingal</p>
+            </div>
+            <div> 
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar nav">
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="section1" class="container-fluid">
+        <h1>Section1</h1>
+        <h3>Codingal</h3>
+        <h5>Codingal is a leading online platform providing live, instructor-led coding and AI classes for children and teens aged
+        5-18 (K-12). It offers a STEM.org accredited, project-based curriculum that includes subjects like Python, web
+        development, app creation, and AI, aiming to prepare students for a digital future.</h5>
+        <p>Scroll this Section</p>
+    </div>
+
+    <div>
+        <div id="section2" class="container-fluid">
+            <h1>Section2</h1>
+            <h3>Codingal</h3>
+            <h5>Vivek Prakash and Satyam Baranwal are the founders of Codingal</h5>
+            <p>Scroll this Section</p>
+        </div>
+    </div>
+
+</body>
+</html>
